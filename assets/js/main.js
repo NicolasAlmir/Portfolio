@@ -47,7 +47,13 @@ function setupMobileMenu() {
 }
 
 // Função para o loader do terminal
+let loaderExecuted = false; // Variável de controle
+
 function setupTerminalLoader() {
+    // Verifica se já executou
+    if (loaderExecuted) return;
+    loaderExecuted = true;
+    
     const terminalLoader = document.getElementById('terminal-loader');
     const typingAnimation = document.getElementById('typing-animation');
     
@@ -58,15 +64,14 @@ function setupTerminalLoader() {
     
     const messages = [
         { text: 'Carregando...', delay: 1500 },
-        { text: 'Preparando componentes...', delay: 1560 },
-        { text: 'Pronto!', delay: 1200 }
+        { text: 'Preparando componentes...', delay: 3000 },
+        { text: 'Pronto!', delay: 2000 }
     ];
     
     let currentMessage = 0;
     
     function showNextMessage() {
         if (currentMessage >= messages.length) {
-            // Finaliza a animação quando todas as mensagens foram exibidas
             terminalLoader.style.opacity = '0';
             setTimeout(() => {
                 terminalLoader.style.display = 'none';
@@ -76,15 +81,20 @@ function setupTerminalLoader() {
 
         const message = messages[currentMessage];
         setTimeout(() => {
-            typingAnimation.innerHTML += `<br><span class="prompt">$</span> ${message.text}`;
+            // Verifica se já não adicionou esta mensagem
+            if (!typingAnimation.innerHTML.includes(message.text)) {
+                typingAnimation.innerHTML += `<br><span class="prompt">$</span> ${message.text}`;
+            }
             currentMessage++;
             showNextMessage();
         }, message.delay);
     }
     
-    // Inicia a sequência
     showNextMessage();
 }
+
+// Adiciona o event listener corretamente
+document.addEventListener('DOMContentLoaded', setupTerminalLoader);
 
 // Chama a função quando a página carrega
 window.addEventListener('load', setupTerminalLoader);
