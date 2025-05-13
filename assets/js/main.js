@@ -64,8 +64,8 @@ function setupTerminalLoader() {
     
     const messages = [
         { text: 'Carregando...', delay: 1500 },
-        { text: 'Preparando componentes...', delay: 3000 },
-        { text: 'Pronto!', delay: 2000 }
+        { text: 'Preparando componentes...', delay: 1250 },
+        { text: 'Pronto!', delay: 1380 }
     ];
     
     let currentMessage = 0;
