@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Almir | Portfólio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/light-mode.css" id="theme-style">
+    <link rel="stylesheet" href="./assets/css/animacoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader Terminal -->
+    <div class="terminal-loader" id="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Carregando</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div class="terminal-content">
+            <div class="typing-animation" id="typing-animation">
+                <span class="prompt">$</span> Initializing portfolio system...
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">&lt;Nicolas Almir/&gt;</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="certificados.html">Certificados</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="title">Olá, eu sou <span class="highlight">Nicolas Almir</span></h1>
+                        <h2 class="subtitle">Desenvolvedor & Estudante de Engenharia da Computação</h2>
+                        <p class="description">Apaixonado por tecnologia e desenvolvimento de software. Sempre buscando aprender.</p>
+                        <div class="cta-buttons">
+                            <a href="projetos.html" class="btn primary">Ver Projetos</a>
+                            <a href="#contato" class="btn secondary">Contato</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/img/perfil.png" alt="Nicolas Almir" class="profile-img">
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-github-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Tenho 18 anos e atualmente estou cursando Engenharia da Computação na UFPA. Minha paixão por tecnologia me levou a explorar diversas áreas da programação e desenvolvimento de software.</p>
+                        <p>Meu objetivo é me tornar um pesquisador e dev, capaz de criar soluções robustas e eficientes para problemas do cotidiano.</p>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Idade:</span>
+                                <span class="info-value">18</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Formação:</span>
+                                <span class="info-value">Eng. da Computação</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Cidade:</span>
+                                <span class="info-value">Belém, PA</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">nicolas.almir.br@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h3 class="skills-title">Gostos pessoais:</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <div class="highlight-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvimento</h3>
+                    <p>Criação de sites e aplicações web com foco em performance e experiência do usuário.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Programação</h3>
+                    <p>Conhecimento em linguagens de programação.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Aprendizado</h3>
+                    <p>Constante busca por novos conhecimentos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nicolas Almir</h3>
+                    <p>Desenvolvedor e estudante de Engenharia da Computação na UFPA.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="habilidades.html">Habilidades</a></li>
+                        <li><a href="certificados.html">Certificados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="social-links">
+                        <li><a href="https://linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/NicolasS4" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://instagram.com/nick_snts_0" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Nicolas Almir. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Nicolas Almir</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animacoes.js"></script>
+</body>
+</html>
