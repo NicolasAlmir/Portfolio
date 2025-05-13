@@ -29,6 +29,6 @@ Este é o repositório do meu portfólio profissional como desenvolvedor. O site
 ## Contato
 
 - LinkedIn: [Nicolas Almir](https://linkedin.com/in/seu-perfil)
-- GitHub: [NicolasS4](https://github.com/NicolasS4)
+- GitHub: [NicolasAlmir](https://github.com/NicolasAlmir)
 - Instagram: [@nick_snts_0](https://instagram.com/nick_snts_0)
 - Email: nicolas.almir.br@gmail.com
