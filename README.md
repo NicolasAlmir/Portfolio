@@ -9,8 +9,6 @@ Este é o repositório do meu portfólio profissional como desenvolvedor. O site
 
 - **Design Responsivo**: Funciona em dispositivos de todos os tamanhos
 - **Dark/Light Mode**: Alternância entre temas escuro e claro
-- **Animações**: Efeitos visuais suaves e interativos
-- **Loader de Terminal**: Animação de terminal ao carregar a página
 - **Portfólio Organizado**: Seções claras para projetos, habilidades e certificados
 
 ## Tecnologias Utilizadas
@@ -19,12 +17,7 @@ Este é o repositório do meu portfólio profissional como desenvolvedor. O site
 - CSS3
 - JavaScript
 - Font Awesome (ícones)
-- Google Fonts (Fira Code, JetBrains Mono)
-
-## Como Executar
-
-1. Clone o repositório
-2. Abra o arquivo `index.html` em qualquer navegador moderno
+- Google Fonts (Fira Code, JetBrains itálico)
 
 ## Contato
 
