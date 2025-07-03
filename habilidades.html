@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-        <link rel="import" href="header.html" id="header-import">
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Almir | Habilidades</title>
-    <link rel="stylesheet" href="./assets/css/style.css">>
-    <link rel="stylesheet" href="./assets/css/light-mode.css" id="theme-style" >
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/light-mode.css" id="theme-style">
     <link rel="stylesheet" href="./assets/css/animacoes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-        <script>
-        const headerImport = document.querySelector('#header-import');
-        headerImport.onload = function() {
-            const headerContent = this.import.querySelector('.header');
-            document.body.prepend(headerContent);
-        };
-    </script>
-
+    <!-- Header carregado dinamicamente -->
 
     <!-- Conteúdo Principal -->
     <main class="main-content">
@@ -92,7 +82,7 @@
                                     <div class="skill-progress" style="width: 80%;"></div>
                                 </div>
                             </div>
-                             <div class="skill-item">
+                            <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">Arduino</span>
                                     <span class="skill-percent">75%</span>
@@ -178,7 +168,7 @@
                         <li><a href="https://www.linkedin.com/in/nicolas-almir-92773527a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                         <li><a href="https://github.com/NicolasAlmir" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="https://instagram.com/nick_snts_0" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="mailto:nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
                     </ul>
                 </div>
             </div>
@@ -188,6 +178,8 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="./assets/js/load-header.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/habilidades.js"></script>
     <script src="./assets/js/animacoes.js"></script>

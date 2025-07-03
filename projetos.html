@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-        <link rel="import" href="header.html" id="header-import">
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Almir | Projetos</title>
@@ -13,13 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-        <script>
-        const headerImport = document.querySelector('#header-import');
-        headerImport.onload = function() {
-            const headerContent = this.import.querySelector('.header');
-            document.body.prepend(headerContent);
-        };
-    </script>
+    <!-- Header carregado dinamicamente -->
 
     <!-- Conteúdo Principal -->
     <main class="main-content">
@@ -32,22 +23,21 @@
                     <!-- Projeto 1 -->
                     <div class="project-card">
                         <div class="project-image">
-                            <video src="./assets/img/projetos/projeto1.mp4" alt="Projeto 1" controls autoplay width="320" height="528">
+                            <video src="./assets/img/projetos/projeto1.mp4" controls width="320" height="528"></video>
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">Tradutor de Código Morse</h3>
-                            <p class="project-description">Um traduor de 2 botôes de input de código morse</p>
+                            <p class="project-description">Um tradutor de 2 botões de input de código morse</p>
                             <div class="project-techs">
                                 <span class="tech-tag">C++</span>
                                 <span class="tech-tag">Arduino</span>
                                 <span class="tech-tag">Código Morse</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/NicolasAlmir/MORSECODE/commit/b32f71eabb3bb28dbf10ca556b4815a5fa7d6215" class="btn small secondary"><i class="fab fa-github"></i> Código</a>
+                                <a href="https://github.com/NicolasAlmir/MORSECODE/commit/b32f71eabb3bb28dbf10ca556b4815a5fa7d6215" class="btn small secondary" target="_blank"><i class="fab fa-github"></i> Código</a>
                             </div>
                         </div>
                     </div>
-                    
                     <!-- Projeto 2 --
                     <div class="project-card">
                         <div class="project-image">
@@ -174,7 +164,7 @@
                         <li><a href="https://www.linkedin.com/in/nicolas-almir-92773527a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                         <li><a href="https://github.com/NicolasAlmir" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="https://instagram.com/nick_snts_0" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="mailto:nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
                     </ul>
                 </div>
             </div>
@@ -184,6 +174,8 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="./assets/js/load-header.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/animacoes.js"></script>
 </body>
