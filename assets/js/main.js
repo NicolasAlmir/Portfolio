@@ -40,12 +40,27 @@ function setupMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     const nav = document.querySelector('.nav');
     
+    if (!mobileMenu || !nav) return; // Verifica se elementos existem
+    
     mobileMenu.addEventListener('click', () => {
         nav.classList.toggle('active');
         mobileMenu.classList.toggle('active');
+        // Adicionar manipulação de aria-expanded para acessibilidade
+        const isExpanded = mobileMenu.classList.contains('active');
+        mobileMenu.setAttribute('aria-expanded', isExpanded);
+    });
+    
+    // Adicionar evento para teclado (acessibilidade)
+    mobileMenu.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            mobileMenu.click();
+        }
     });
 }
 
+// Chamar a função quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', setupMobileMenu);
 // Função para o loader do terminal
 let loaderExecuted = false; // Variável de controle
 
@@ -63,9 +78,9 @@ function setupTerminalLoader() {
     typingAnimation.innerHTML = '<span class="prompt">$</span> Initializing portfolio system...';
     
     const messages = [
-        { text: 'Carregando...', delay: 1500 },
-        { text: 'Preparando componentes...', delay: 1250 },
-        { text: 'Pronto!', delay: 1380 }
+        { text: 'Carregando...', delay: 1100 },
+        { text: 'Preparando componentes...', delay: 1050 },
+        { text: 'Pronto!', delay: 1080 }
     ];
     
     let currentMessage = 0;

@@ -177,26 +177,19 @@ a:hover {
     width: 100%;
 }
 
+.theme-toggle:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 .theme-toggle {
-    background: none;
-    border: none;
-    color: var(--text-primary-dark);
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-left: 2rem;
-    transition: transform 0.3s;
+    transform: rotate(0);
+    will-change: transform; 
 }
 
-.theme-toggle:hover {
-    transform: rotate(30deg);
+.mobile-menu.active {
+    color: var(--accent-color);
 }
-
-.mobile-menu {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 /* CONTEÚDO PRINCIPAL */
 .main-content {
     padding-top: 80px;

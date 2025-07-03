@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+        <link rel="import" href="header.html" id="header-import">
+</head>
+<body>
+    <script>
+        const headerImport = document.querySelector('#header-import');
+        headerImport.onload = function() {
+            const headerContent = this.import.querySelector('.header');
+            document.body.prepend(headerContent);
+        };
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Almir | Portfólio</title>
@@ -27,28 +38,6 @@
         </div>
     </div>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <span class="logo-text">&lt;Nicolas Almir/&gt;</span>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="habilidades.html">Habilidades</a></li>
-                    <li><a href="certificados.html">Certificados</a></li>
-                </ul>
-            </nav>
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
     <!-- Conteúdo Principal -->
     <main class="main-content">
