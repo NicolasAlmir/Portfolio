@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,24 @@
     <link rel="stylesheet" href="./assets/css/animacoes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <!-- Header carregado dinamicamente -->
 
+<body>
+    <!-- Header -->
+    <header>
+        <link rel="import" href="header.html">
+    </header>
     <!-- Conteúdo Principal -->
     <main class="main-content">
         <section class="skills-section">
             <div class="container">
                 <h1 class="page-title">Minhas Habilidades</h1>
                 <p class="page-subtitle">Competências técnicas e comportamentais.</p>
-                
+
                 <div class="skills-tabs">
                     <button class="tab-btn active" data-tab="tecnico">Técnicas</button>
                     <button class="tab-btn" data-tab="comportamental">Comportamentais</button>
                 </div>
-                
+
                 <div class="tab-content active" id="tecnico">
                     <div class="skills-grid">
                         <div class="skill-category">
@@ -92,7 +96,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
                             <h3 class="category-title">Outras Habilidades</h3>
                             <div class="other-skills">
@@ -116,13 +120,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="tab-content" id="comportamental">
                     <div class="soft-skills">
                         <div class="soft-skill-card">
                             <i class="fas fa-lightbulb"></i>
                             <h3>Interesse em Aprender</h3>
-                            <p>Sempre buscando novos conhecimentos e tecnologias para me aprimorar profissionalmente.</p>
+                            <p>Sempre buscando novos conhecimentos e tecnologias para me aprimorar profissionalmente.
+                            </p>
                         </div>
                         <div class="soft-skill-card">
                             <i class="fas fa-arrows-alt"></i>
@@ -146,42 +151,14 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nicolas Almir</h3>
-                    <p>Desenvolvedor e estudante de Engenharia da Computação na UFPA.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="habilidades.html">Habilidades</a></li>
-                        <li><a href="certificados.html">Certificados</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <ul class="social-links">
-                        <li><a href="https://www.linkedin.com/in/nicolas-almir-92773527a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/NicolasAlmir" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="https://instagram.com/nick_snts_0" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="mailto:nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nicolas Almir. Todos os direitos reservados.</p>
-            </div>
-        </div>
+    <footer>
+        <link rel="import" href="footer.html">
     </footer>
-
     <!-- Scripts -->
     <script src="./assets/js/load-header.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/habilidades.js"></script>
     <script src="./assets/js/animacoes.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,12 @@
     <link rel="stylesheet" href="./assets/css/animacoes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <!-- Header carregado dinamicamente -->
 
+<body>
+    <!-- Header -->
+    <header>
+        <link rel="import" href="header.html">
+    </header>
     <!-- Loader Terminal -->
     <div class="terminal-loader" id="terminal-loader">
         <div class="terminal-header">
@@ -37,7 +41,8 @@
                     <div class="hero-text">
                         <h1 class="title">Olá, eu sou <span class="highlight">Nicolas Almir</span></h1>
                         <h2 class="subtitle">Desenvolvedor & Estudante de Engenharia da Computação</h2>
-                        <p class="description">Apaixonado por tecnologia e desenvolvimento de software. Sempre buscando aprender.</p>
+                        <p class="description">Apaixonado por tecnologia e desenvolvimento de software. Sempre buscando
+                            aprender.</p>
                         <div class="cta-buttons">
                             <a href="projetos.html" class="btn primary">Ver Projetos</a>
                             <a href="#contato" class="btn secondary">Contato</a>
@@ -64,8 +69,11 @@
                 <h2 class="section-title">Sobre Mim</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Tenho 18 anos e atualmente estou cursando Engenharia da Computação na UFPA. Minha paixão por tecnologia me levou a explorar diversas áreas da programação e desenvolvimento de software.</p>
-                        <p>Meu objetivo é me tornar um pesquisador e dev, capaz de criar soluções robustas e eficientes para problemas do cotidiano.</p>
+                        <p>Tenho 18 anos e atualmente estou cursando Engenharia da Computação na UFPA. Minha paixão por
+                            tecnologia me levou a explorar diversas áreas da programação e desenvolvimento de software.
+                        </p>
+                        <p>Meu objetivo é me tornar um pesquisador e dev, capaz de criar soluções robustas e eficientes
+                            para problemas do cotidiano.</p>
                         <div class="info-grid">
                             <div class="info-item">
                                 <span class="info-label">Idade:</span>
@@ -141,42 +149,13 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="footer" id="contato">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nicolas Almir</h3>
-                    <p>Desenvolvedor e estudante de Engenharia da Computação na UFPA.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="habilidades.html">Habilidades</a></li>
-                        <li><a href="certificados.html">Certificados</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <ul class="social-links">
-                        <li><a href="https://www.linkedin.com/in/nicolas-almir-92773527a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/NicolasAlmir" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="https://instagram.com/nick_snts_0" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="mailto:nicolas.almir.br@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nicolas Almir. Todos os direitos reservados.</p>
-                <p>Desenvolvido por Nicolas Almir</p>
-            </div>
-        </div>
+    <footer>
+        <link rel="import" href="footer.html">
     </footer>
-
     <!-- Scripts -->
     <script src="./assets/js/load-header.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/animacoes.js"></script>
 </body>
+
 </html>
